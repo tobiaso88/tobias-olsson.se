@@ -1,0 +1,8 @@
+name: tobias-olsson.se
+services:
+- environment_slug: php
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: tobiaso88/tobias-olsson.se
+  name: tobias-olsson.se
