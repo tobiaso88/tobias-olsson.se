@@ -1,12 +1,3 @@
-<?php
-
-session_start();
-if (!isset($_SESSION['logged'])) {
-    $line = date('Y-m-d H:i:s') . " - " . print_r($_SERVER, true) ;
-    file_put_contents('visitors.log', $line . PHP_EOL, FILE_APPEND);
-    $_SESSION['logged'] = true;
-}
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="sv">
 <head>
